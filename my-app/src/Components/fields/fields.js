@@ -1,22 +1,5 @@
-import styles from './fields.module.css';
 import { connect } from 'react-redux';
-
-const FieldLayout = ({ handleStep, fields }) => (
-	<div className={styles.container}>
-		{fields.map((it, id) => {
-			return (
-				<button
-					ind={id}
-					key={id}
-					className={styles.button}
-					onClick={(e) => handleStep(e, id)}
-				>
-					{it}
-				</button>
-			);
-		})}
-	</div>
-);
+import { FieldLayout } from './fields-layout';
 
 export const FieldsContainer = ({
 	fields,

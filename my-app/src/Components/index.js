@@ -1,2 +1,2 @@
 export * from './information/information';
-export * from './fields/fields'
+export * from './fields/fields';

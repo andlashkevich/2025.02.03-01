@@ -1,9 +1,5 @@
-import styles from './information.module.css';
 import { connect } from 'react-redux';
-
-const InformationLayout = ({ message }) => (
-	<div className={styles.information}>{message}</div>
-);
+import { InformationLayout } from './information-layout';
 
 export const InformationContainer = ({ currentPlayer, isDraw, isGameEnded }) => {
 	let message = '';
